@@ -4,6 +4,8 @@ services:
   time:
     image: tangramor/nginx-php8-fpm:php8.4.3_withoutNodejs
     restart: always
+    env_file:
+      - .env
     volumes:
       - "./src:/var/www/html"
     labels:
