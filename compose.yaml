@@ -1,6 +1,6 @@
 services:
   time:
-    # container_name: time
+    container_name: time
     image: nginx:alpine
     restart: always
     env_file:
